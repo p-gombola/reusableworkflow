@@ -6,3 +6,5 @@ on:
 jobs:
   call-workflow:
     uses: mluzcabrera/reusableworkflow/.github/workflows/workflow-A.yml@main
+    with:
+      who-to-greet: "Maria de la Luz"
