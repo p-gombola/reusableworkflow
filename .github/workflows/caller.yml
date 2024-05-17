@@ -5,7 +5,7 @@ on:
   
 jobs:
   call-workflow:
-    uses: mluzcabrera/reusableworkflow/.github/workflows/workflow-A.yml@v1
+    uses: mluzcabrera/reusableworkflow/.github/workflows/workflow-A.yml@main
 
   call-workflow-passing-data:
     permissions:
