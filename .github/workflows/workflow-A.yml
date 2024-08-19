@@ -11,10 +11,6 @@ on:
         default: world
     
 jobs:
-  Explore-GitHub-Actions:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Hello ${{ inputs.who-to-greet }}!"
   Nested:
     uses: p-gombola/reusableworkflow/.github/workflows/workflow-B.yml@main
     with: 
