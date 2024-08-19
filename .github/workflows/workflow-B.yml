@@ -9,6 +9,6 @@ on:
 
 jobs:
   Nested-C:
-    uses: p-gombola/reusableworkflow/.github/workflows/workflow-C.yml@main
+    uses: p-gombola/reusableworkflow/.github/workflows/workflow-C.yaml@main
     with: 
       who-to-greet: ${{inputs.who-to-greet}}
