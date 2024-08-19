@@ -8,7 +8,7 @@ on:
         default: world
 
 jobs:
-   print:
-     runs-on: ubuntu-latest
-     steps:
-       - run: echo "Hello ${{ inputs.who-to-greet }} from D!"
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello ${{ inputs.who-to-greet }} from D!"
