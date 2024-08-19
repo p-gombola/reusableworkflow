@@ -1,4 +1,4 @@
-name: Reusable workflow example
+name: Workflow B
 
 on:
   workflow_call:
@@ -12,7 +12,3 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello ${{ inputs.who-to-greet }}!"
-  call-workflowA:
-    uses: p-gombola/reusableworkflow/.github/workflows/workflow-A.yml@main
-    with:
-      who-to-greet: "Jane Jetson"
