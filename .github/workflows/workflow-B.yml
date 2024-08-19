@@ -11,4 +11,4 @@ jobs:
   print:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello ${{ inputs.who-to-greet }}!"
+      - run: echo "Hello ${{ inputs.who-to-greet }} from B!"
