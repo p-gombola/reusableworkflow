@@ -1,0 +1,14 @@
+name: Workflow C
+
+on:
+  workflow_call:
+    inputs:
+      who-to-greet:
+        type: string
+        default: world
+
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello ${{ inputs.who-to-greet }} from C!"
