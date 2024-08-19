@@ -12,3 +12,7 @@ jobs:
     uses: p-gombola/reusableworkflow/.github/workflows/workflow-C.yaml@main
     with: 
       who-to-greet: ${{inputs.who-to-greet}}
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello ${{ inputs.who-to-greet }} from B!"
