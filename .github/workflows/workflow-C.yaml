@@ -12,3 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello ${{ inputs.who-to-greet }} from C!"
+  Nested-D:
+    uses: p-gombola/reusableworkflow/.github/workflows/workflow-D.yaml@main
+    with: 
+      who-to-greet: ${{inputs.who-to-greet}}
