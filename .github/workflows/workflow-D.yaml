@@ -6,9 +6,18 @@ on:
       who-to-greet:
         type: string
         default: world
+    outputs:
+      message:
+        value: ${{ jobs.example_job.outputs.output1 }}
 
 jobs:
   print:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello ${{ inputs.who-to-greet }} from D!"
+  example_job:
+    runs-on: ubuntu-latest
+    outputs:
+      output1: ${{ steps.step1.outputs.mymessage }}
+    steps:
+      - run: echo "mymessage=example" >> $GITHUB_OUTPUT
