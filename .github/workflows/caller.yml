@@ -8,6 +8,6 @@ jobs:
   #   with:
   #     who-to-greet: "George Jetson"
   call-local-action:
-    uses: https://github.com/p-gombola/external-reusableworkflow/.github/workflows/Greet.yaml@main
+    uses: p-gombola/external-reusableworkflow/.github/workflows/Greet.yaml@main
     with:
       who-to-greet: "Mona the Octocat"
