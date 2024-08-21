@@ -3,7 +3,13 @@ name: Call a reusable workflow
 on: workflow_dispatch
   
 jobs:
-  call-workflow:
-    uses: p-gombola/reusableworkflow/.github/workflows/workflow-A.yml@main
-    with:
-      who-to-greet: "George Jetson"
+  # call-workflow:
+  #   uses: p-gombola/reusableworkflow/.github/workflows/workflow-A.yml@main
+  #   with:
+  #     who-to-greet: "George Jetson"
+  call-local-action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./
+        with:
+          who-to-greet: 'Mona the Octocat'
