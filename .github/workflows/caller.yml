@@ -15,5 +15,5 @@ jobs:
       - name: ls
         run: ls
         shell: bash
-  call-local-action:
+  call-external-workflow:
     uses: p-gombola/external-reusableworkflow/.github/workflows/Greet.yaml@main
