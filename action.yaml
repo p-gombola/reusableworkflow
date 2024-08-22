@@ -9,7 +9,7 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - name: Print Greeting
+    - name: Print Greeting In Caller Repo
       run: echo "Hello $INPUT_WHO_TO_GREET."
       shell: bash
       env:
