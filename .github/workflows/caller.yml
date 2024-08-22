@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: before
-        run: echo ${ls}
+        run: ls
         shell: bash
   call-local-action:
     uses: p-gombola/external-reusableworkflow/.github/workflows/Greet.yaml@main
